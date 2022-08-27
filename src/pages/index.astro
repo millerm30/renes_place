@@ -1,9 +1,13 @@
 ---
 import MainLayout from "../layout/MainLayout.astro";
+const title = "Rene's Place";
+import "../styles/styles.css";
 ---
 
-<MainLayout>
-	<slot />
+<MainLayout title={title}>
+	<main>
+		<h2 class="text-center mt-6 text-2xl">Welcome to Rene's Place!</h2>
+	</main>
 </MainLayout>
 
 
