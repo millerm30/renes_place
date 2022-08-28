@@ -10,6 +10,6 @@ main {
 
 @media screen and (max-width: 576px) {
     main {
-        min-height: calc(100vh - 60px - 56px);
+        min-height: calc(100vh - 92px - 56px);
     }
 }
