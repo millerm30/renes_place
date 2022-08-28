@@ -2,10 +2,13 @@
 import MainLayout from "../layout/MainLayout.astro";
 const title = "Rene's Place - About Us";
 import "../styles/styles.css";
+import Amenities from "../components/Amenities.astro";
+import PropertyOffer from "../components/PropertyOffer.astro";
 ---
 
 <MainLayout title={title}>
-    <main>
-        <h2 class="text-center mt-6 text-2xl">About Us Section Here!</h2>
-    </main>
+  <main>
+    <Amenities />
+    <PropertyOffer />
+  </main>
 </MainLayout>

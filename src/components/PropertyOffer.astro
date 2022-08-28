@@ -1,0 +1,17 @@
+---
+import OffersCard from "./OffersCard.astro";
+---
+
+<h2 class="text-center pt-6 text-2xl font-bold">What this place offers</h2>
+<div class="mainContainer w-11/12 flex border-2 border-gray-300 rounded-lg mt-6 md:w-2/3 lg:w-2/5 mx-auto justify-between">
+  <div class="containerLeft">
+    <OffersCard name={"foundation:photo"} title={"Bay View"}/>
+    <OffersCard name={"tabler:tools-kitchen-2"} title={"Kitchen"}/>
+    <OffersCard name={"dashicons:pets"} title={"Pets Allowed"}/>
+  </div>
+  <div class="containerRight">
+    <OffersCard name={"tabler:beach"} title={"Public or shared beach access"}/>
+    <OffersCard name={"bi:wifi"} title={"Wifi"}/>
+    <OffersCard name={"ant-design:car-outlined"} title={"Free driveway parking access for 2 vehicles"}/>
+  </div>
+</div>

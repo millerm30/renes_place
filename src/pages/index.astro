@@ -2,11 +2,45 @@
 import MainLayout from "../layout/MainLayout.astro";
 const title = "Rene's Place";
 import "../styles/styles.css";
+import "../assets/view.png";
 ---
+<style>
+
+	main {
+  	display: block;
+  	position: relative;
+	}
+
+	main::after {
+  	content: "";
+  	background-image: url("../assets/view.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+  	opacity: 0.4;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  	position: absolute;
+  	z-index: -1;   
+	}
+
+</style>
 
 <MainLayout title={title}>
 	<main>
-		<h2 class="text-center mt-6 text-2xl">Welcome to Rene's Place!</h2>
+		<div class="flex flex-col">
+			<h2 class="text-center text-2xl pt-6">Welcome to Rene's Place!</h2>
+			<div class="w-5/6 bg-white md:w-1/2 lg:w-1/2 mx-auto mt-10 p-6 rounded-xl">
+				<p>
+					Come relax with the whole family at Rene's Place in Heart's Desire , NL on the Baccalieu trail route 80 with a spectacular view and a 
+					beautiful Gannet Point walking trail out to the Red Rocks . About 10 minutes from Pitchers golf course, 20 minutes to Dildo Nl , 
+					25 minutes from Salmon Cove Sands , 45 minutes from Northern Bay Sands and 1.5 hours from St.John's NL. There's a boat 
+					launch 2 minutes away and you can park your boat at Rene's Place .
+				</p>
+			</div>
+		</div>
 	</main>
 </MainLayout>
 

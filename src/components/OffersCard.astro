@@ -1,0 +1,14 @@
+---
+import { Icon } from "astro-icon";
+const { title } = Astro.props;
+const { name } = Astro.props;
+---
+
+<div class="flex p-2">
+  <div class="pr-2">
+    <Icon name={name} class="w-[30px] inline" />
+  </div>
+  <div class="my-auto">
+    <p>{title}</p>
+  </div>
+</div>
